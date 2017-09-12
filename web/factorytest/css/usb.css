@@ -1,0 +1,32 @@
+#title
+{
+	position:relative;
+	top:100px;
+	font-size:50px;
+	/*width:1280px;*/
+	color:#FFF;
+}
+#content
+{
+	position:relative;
+	top:450px;
+	font-size:30px;
+	/*width:1280px;*/
+	color:#FFF;
+}
+#result
+{
+	position:relative;
+	top:200px;
+	font-size:40px;
+	color:#0F0;
+	display:none;
+}	
+#tip
+{
+	position:relative;
+	top:200px;
+	font-size:40px;
+	color:#FFF;
+	display:none;
+}

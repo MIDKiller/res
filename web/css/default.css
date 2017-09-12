@@ -1,0 +1,124 @@
+/* CSS Document */
+#titlebar {
+	position: absolute;
+	left:444px;
+	top:82px;
+	width:395px;
+	height:30px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+
+#showpanel {
+	position: absolute;
+	left:441px;
+	top:219px;
+	width:722px;
+	height:300px;
+	font-family: "黑体";
+	color:#FFFFFF;
+}
+
+#showtext {
+	position: absolute;
+	left:11px;
+	top:12px;
+	width:690px;
+	height:30px;
+	font-size:32px;
+}
+
+.btn {
+	background-image:url('../img/focusText1.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+	position: absolute;
+	left: 238px;
+	top: 128px;
+	font-size:32px;
+}
+#banner{
+	position: absolute;
+	width: 311px;
+	height:460px;
+	top:180px;
+	left:81px;
+	background-image: url("../img/listBg1.png");
+}
+.banner{
+	position:absolute;
+	color:gray;
+	z-index:5;
+	font-family: "黑体";
+	font-size: 36px;
+	line-height: 46px;
+	left: 70px;
+}
+#bannerFocus{
+	position: absolute;
+	width:308px;
+	height: 68px;
+	left:1px;
+	top:60px;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../img/listFocus2.png"); 
+}
+#powerset
+{
+	position: absolute;
+	left:441px;
+	top:219px;
+	width:722px;
+	height:500px;
+	font-family: "黑体";
+	color:#FFFFFF;
+}
+.powertitle
+{
+	position: absolute;
+	left:39px;
+	top:16px;
+	width:677px;
+	height:30px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+.powerctrlbg
+{
+	position: absolute;
+	left:44px;
+	top:81px;
+	width:577px;
+	height:46px;
+	background-image:url(../img/focusHover0.png);
+	background-repeat:no-repeat;
+}
+.powertip
+{
+	position: absolute;
+	left:71px;
+	top:156px;
+	width:525px;
+	height:30px;
+	font-family: "黑体";
+	font-size:24px;
+	color:#FFFFFF;
+}
+#powerctrl
+{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:577px;
+	height:46px;
+	background-image:url(../img/focusHover2.png);
+	background-repeat:no-repeat;
+	font-size:28px;
+	line-height:45px;
+	text-align:center;
+}

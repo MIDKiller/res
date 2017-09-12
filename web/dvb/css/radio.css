@@ -1,0 +1,110 @@
+/* CSS Document */
+
+.logo{
+	position:absolute;
+	left:21px;
+	top:34px;
+	width:80px;
+	height:80px;
+}
+
+.bar {
+	position:absolute;
+	left:455px;
+	top:284px;
+	width:357px;
+	height:208px;
+	background-image:url(../img/bg3.jpg);
+}
+
+#volbar {
+	position:absolute;
+	width:891px;
+	height:55px;
+	left:198px;
+	top:600px;
+	background-image:url('../img/jdtBg.png');
+	background-repeat:no-repeat;
+	padding-left:68px;
+	padding-top:15px;
+	z-index:100;
+}
+
+#volnum {
+	position:absolute;
+	width:90px;
+	height:40px;
+	left:789px;
+	top:7px;
+	font-size:36px;
+	color:#CCC;
+	line-height:40px;
+	text-align:center;
+}
+
+#curvol {
+	height:25px;
+	-webkit-transition-property:width;
+	-webkit-transition-duration:0.5s;
+}
+
+#mutepan {
+	position:absolute;
+	width:88px;
+	height:88px;
+	left:91px;
+	top:41px;
+}
+
+#rchan {
+	position:absolute;
+	width:503px;
+	height:204px;
+	left:401px;
+	top:282px;
+	overflow:hidden;
+}
+
+.chanline {
+	position:absolute;
+	width:460px;
+	height:68px;
+	left:30px;
+	overflow:hidden;
+	line-height:64px;
+	font-size:32px;
+	color:#CCC;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.5s;
+}
+
+#curtime {
+	position:absolute;
+	width:109px;
+	height:68px;
+	left:788px;
+	top:217px;
+	overflow:hidden;
+	line-height:68px;
+	font-size:32px;
+	color:#CCC;
+}
+#volTrack {
+	position:absolute;
+	left:1030px;
+	top:80px;
+	width:150px;
+	height:50px;
+	font-size:48px;
+		
+}
+
+#advdiv 
+{
+	position:absolute;
+	width:755px;
+	height:100px;
+	left:390px;
+	top:566px;
+	overflow:hidden;
+}

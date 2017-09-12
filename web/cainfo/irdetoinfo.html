@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+
+		<title>系统信息</title>
+
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+
+		<meta http-equiv="description" content="this is my page">
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+
+		<link rel="stylesheet" type="text/css" href="css/irdetoinfo.css">
+
+		<script type="text/javascript" src="../js/key.js"></script>
+
+		<script type="text/javascript" src="../js/utils.js"></script>
+
+		<script type="text/javascript" src="js/irdetoinfo.js"></script>
+
+	</head>
+
+	<body background="../img/userSetBg.jpg" onLoad="pageinit()">
+
+		<div id="logo" style="top:16px"></div>
+
+		<div id="banner">
+
+			<div id="list0" class="banner" style="top:40px;color: white;">机顶盒信息</div>
+			<div id="list1" class="banner" style="top:108px;color:white;">CA基本信息</div>
+			<!--		<div id="list2" class="banner" style="top:176px;color:white">CA授权信息</div> !-->
+			<div id="bannerFocus" style="top:30px;"></div>
+
+		</div>
+
+		<div id="titlebar">系统设置 > 系统信息</div>
+
+		<div id="infobar" class="infobar" style="top:138px;left:444px;display:none;">
+
+			<div>生产厂商：<span class="textcolor">西安海数多媒体技术有限公司</span></div>
+
+			<div>序&nbsp;&nbsp;列&nbsp;&nbsp;号：<span id="stbid" class="textcolor"></span></div>
+			<div>业&nbsp;&nbsp;务&nbsp;&nbsp;号：<span id="bossnum" class="textcolor"></span></div>
+
+			<div>设备型号：<span class="textcolor">DB808HC</span></div>
+
+			<div>芯片型号：<span class="textcolor">Hi3716Mv310</span></div>
+
+			<div>内&nbsp;&nbsp;&nbsp;存：<span class="textcolor">512M</span></div>
+
+			<div>硬件版本：<span id="hwver" class="textcolor"></span></div>
+
+			<div>软件版本：<span id="softver" class="textcolor"></span></div>
+
+			<div>发布日期：<span id="pubdate" class="textcolor"></span></div>
+
+		</div>
+
+		<div id="cainfobar" class="infobar" style="top:138px;left:444px;display:none">
+			<div>CA版本号：<span id="caversion" class="textcolor">1231212</span></div>
+			<div>卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<span id="cardnum" class="textcolor"></span></div>
+			<div>类型：<span id="catype" class="textcolor">5</span></div>
+			<!--        <div>状态：<span id="castate" class="textcolor">OK</span></div>  -->
+			<div>EMM：<span id="emm" class="textcolor"></span></div>
+			<div>ECM：<span id="ecm" class="textcolor"></span></div>
+			<div>业务信息：<span id="workinfo" class="textcolor"></span></div>
+			<div>流状态：<span id="Tsinfo" class="textcolor"></span></div>
+			<div>业务状态：<span id="workstate" class="textcolor"></span></div>
+			<div>CA信息:<span id="cainfo" class="textcolor"></span></div>
+		</div>
+		<div id="rightItem" class="infobar_a" style="display:none">
+			<div>版本：<span id="version" class="textcolor"></span></div>
+			<div>区域：<span id="castate" class="textcolor"></span></div>
+		</div>
+
+		<div id="authinfo" class="infobar" style="display:none">
+			<div style="position:absolute; left:2px; top: 2px;">序号</div>
+			<div style="position:absolute; left:134px; top: 2px;">运营商ID</div>
+			<div style="position:absolute; left:356px; top: 3px; width: 208px;">运营商名称</div>
+
+			<div id="item0" class="item" style="top:50px">
+				<div id="order0" class="order"></div>
+				<div id="operid0" class="operid"></div>
+				<div id="opername0" class="opername"></div>
+			</div>
+			<div id="item1" class="item" style="top:100px">
+				<div id="order1" class="order"></div>
+				<div id="operid1" class="operid"></div>
+				<div id="opername1" class="opername"></div>
+			</div>
+			<div id="item2" class="item" style="top:150px">
+				<div id="order2" class="order"></div>
+				<div id="operid2" class="operid"></div>
+				<div id="opername2" class="opername"></div>
+			</div>
+			<div id="item3" class="item" style="top:200px">
+				<div id="order3" class="order"></div>
+				<div id="operid3" class="operid"></div>
+				<div id="opername3" class="opername"></div>
+			</div>
+
+			<div id="listfocus" style="top:50px;"></div>
+		</div>
+		<div id="empty">无授权信息！</div>
+		<div id="quitpng"><img src="../img/ico2.png" /></div>
+		<div id="quit">退出</div>
+		<div id="enter" style="display:none;">
+			<div id="enterpng"><img src="../img/ico1.png" />
+			</div>
+			<div id="entertext">进入</div>
+		</div>
+	</body>
+
+</html>

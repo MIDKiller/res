@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>多屏互动</title>
+<script type="text/javascript" src="js/utils.js"></script>
+</head>
+<style>
+body
+{
+	background-color:#000;
+}
+
+#note
+{
+	position:absolute;
+	width:674px;
+	height:210px;
+	background-image:url(dvb/img/small_note.png);
+	background-repeat:no-repeat;
+	left:303px;
+	top:240px;
+	line-height:200px;
+	text-align:center;
+	color:#FFF;
+	font-size:24px;
+}
+</style>
+<script language="javascript">
+function backKeyHandler()
+{
+	var keyCode = event.keyCode;
+	switch (keyCode)
+	{
+	case KEY_EXIT:
+	case KEY_RETURN:
+		HiBox.setMainFrame({location:"main"})
+		return false;
+	default:
+		break;
+	}
+}
+function onload()
+{
+	DVB.stop();
+	MediaPlayer.deinit();
+	
+	window.onkeydown = backKeyHandler;
+	
+	setTimeout(function() {
+		window.location.href = System.getWebEnv("screenurl");
+	}, 500);
+}
+</script>
+<body onload="onload()">
+<div id="note">
+	正在跳转至多屏互动视频播放页面，请稍后...
+</div>
+</body>
+</html>

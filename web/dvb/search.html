@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>节目搜索</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <script type="text/javascript" src="../js/key.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+  </head>
+  
+  <body background="../img/userSetBg.jpg" onLoad="pageinit()" onUnload="pageuninit()">
+<div id="logo" style="top:25px"></div>
+  	<div id="banner">
+<div id="list0" class="banner" style="top:30px;color: white;">自动搜索</div>
+   		<div id="list1" class="banner" style="top:116px;">手动搜索</div>
+        <div id="list2" class="banner" style="top:202px;">全频搜索</div>
+        <div id="list3" class="banner" style="top:288px;">频道清除</div>
+<div id="list4" class="banner" style="top:374px;">主&nbsp;频&nbsp;点</div>
+   		<div id="bannerFocus" style="top:20px;"></div>
+   </div>
+   <div id="titlebar">系统设置 > 节目搜索</div>
+   
+   <div id="autoscan" >
+<div>请点击下面的"开始搜索"按钮,开始搜索。</div>
+        <div id="autoscanbtn" class="btn">开始搜索</div>
+   </div>
+   
+   <div id="manualscan" style="display:none">
+   		<div class="inputtitle">
+        	<div>频&nbsp;&nbsp;&nbsp;&nbsp;率：</div>
+            <div>符&nbsp;号&nbsp;率：</div>
+            <div>调制模式：</div>
+        </div>
+        <div class="inputline">
+        	<div class="inputbg"></div>
+            <div class="inputbg"></div>
+            <div class="inputbg"></div>
+        </div>
+        <div id="manualscanbtn" class="btn">开始搜索</div>
+        
+        <div class="inputlayer" style="left:389px; top:5px;">
+           <div id="num00" class="inputtext">6</div>
+           <div id="num01" class="inputtext">1</div>
+           <div id="num02" class="inputtext">8</div>
+        </div>
+		<div class="inputlayer" style="left:374px; top:70px;">
+        	<div id="num10" class="inputtext">6</div>
+			<div id="num11" class="inputtext">8</div>
+			<div id="num12" class="inputtext">7</div>
+            <div id="num13" class="inputtext">5</div>
+        </div>
+        <div id="qaminput" class="inputlayer" style="left:358px; top:146px;">
+        	64-QAM
+        </div>
+        
+        
+		<div id="inputfocus" style="display:none"></div>
+        <div id="editfocus" style="display:none" ></div>
+   </div>
+   
+<div id="freqset" style="display:none">
+   		<div class="inputtitle">
+        	<div>频&nbsp;&nbsp;&nbsp;&nbsp;率：</div>
+            <div>符&nbsp;号&nbsp;率：</div>
+            <div>调制模式：</div>
+        </div>
+        <div class="inputline">
+        	<div class="inputbg"></div>
+            <div class="inputbg"></div>
+            <div class="inputbg"></div>
+        </div>
+        <div id="freqsetbtn" class="btn">保&nbsp;&nbsp;存</div>
+        
+        <div class="inputlayer" style="left:389px; top:5px;">
+           <div id="freqnum00" class="inputtext">6</div>
+           <div id="freqnum01" class="inputtext">7</div>
+           <div id="freqnum02" class="inputtext">4</div>
+        </div>
+		<div class="inputlayer" style="left:374px; top:70px;">
+        	<div id="freqnum10" class="inputtext">6</div>
+			<div id="freqnum11" class="inputtext">8</div>
+			<div id="freqnum12" class="inputtext">7</div>
+            <div id="freqnum13" class="inputtext">5</div>
+        </div>
+        <div id="freqqaminput" class="inputlayer" style="left:358px; top:146px;">
+        	64-QAM
+        </div>
+        
+		<div id="freqinputfocus" style="display:none"></div>
+        <div id="freqeditfocus" style="display:none" ></div>
+   </div>
+   
+   <div id="scandiv" style="display:none">
+   	<div id="scanrst">正在搜索...</div>
+    <div id="scanstat">
+    	<div>
+        	<div id="tvnum" class="channum">电视：&nbsp;0</div>
+            <div id="radionum" class="channum">广播：&nbsp;0</div>
+            <div id="ocnum" class="channum">资讯：&nbsp;0</div>
+        </div>
+        <div class="searchproc">
+			<div class="proctext">进度：</div>
+            <div class="procbg">
+            	<img id="procimg" src="img/ssLeft.jpg" style="height:22px;-webkit-transition-property:width;-webkit-transition-duration:0.3s;" border="0">
+            </div>
+        </div>
+    </div>
+   </div>
+   
+<div id="clschan" style="display:none">
+   		<div>请点击下面的"清除频道"按钮,清除频道。</div>
+        <div id="clschanbtn" class="btn">清除频道</div>
+   </div>
+   
+   <div id="askbox" class="askbox" style="display:none">
+   	<div id="asktitle">清除频道</div>
+    <div id="askinfo">确定删除所有频道？</div>
+   	<div id="askokbtn">确&nbsp;&nbsp;定</div>
+    <div id="asknobtn">取&nbsp;&nbsp;消</div>
+   </div>
+  
+<div id="msgbox" class="msgbox" style="display:none">
+	<div id="msgtitle">清除频道</div>
+	<div id="msginfo">确定删除所有频道？</div>
+   	<div id="msgokbtn">确&nbsp;&nbsp;定</div>
+</div>
+
+</body>
+</html>

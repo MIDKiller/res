@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>广播播放页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/radio.css">
+    <script type="text/javascript" src="../js/key.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="js/radio.js"></script>
+</head>
+<body background="img/bg4.jpg" onload="pageinit()">
+	
+    <div id="rchan">
+    	<div id="chan0" class="chanline" style="top:-68px;"></div>
+        <div id="chan1" class="chanline" style="top:0px;"></div>
+        <div id="chan2" class="chanline" style="top:68px;">&nbsp;&nbsp;&nbsp;&nbsp;没有节目</div>
+        <div id="chan3" class="chanline" style="top:136px;"></div>
+        <div id="chan4" class="chanline" style="top:204px;"></div>
+    </div>
+    
+    <div id="volbar" style="display:none">
+    	<img id="curvol" src="img/jdt_center.png" border="0" />
+      <div id="volnum">0</div>
+	</div>
+    
+    <div id="mutepan" style="display:none">
+    	<img src="img/jy.png" border="0" />
+    </div>
+    
+    <div id="curtime"></div>
+    <div id="volTrack" style="display:none"></div>
+    
+    <div id="advdiv"></div>
+</body>
+</html>

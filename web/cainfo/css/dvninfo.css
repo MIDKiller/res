@@ -1,0 +1,262 @@
+/* CSS Document */
+body {
+	background-color:#000000;
+}
+
+#banner{
+	position: absolute;
+	width: 311px;
+	height:460px;
+	top:138px;
+	left:80px;
+	text-align: center;
+	background-image: url("../../img/listBg1.png");
+}
+.banner{
+	position:absolute;
+	width: 311px;
+	color:gray;
+	z-index:5;
+	font-family: "黑体";
+	font-size: 36px;
+	line-height: 46px;
+}
+#bannerFocus{
+	position: absolute;
+	width:308px;
+	height: 68px;
+	left:1px;
+	top:30px;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../../img/listFocus2.png"); 
+}
+#listfocus{
+	position: absolute;
+	width:677px;
+	height: 50px;
+	top:50px;
+	z-index:-5;
+	display:none;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	
+	background-image: url("../../img/listFocus5.png");
+}
+#titlebar {
+	position: absolute;
+	left:443px;
+	top:50px;
+	width:422px;
+	height:30px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+#empty{
+	position: absolute;
+	left:580px;
+	top:300px;
+	font-size:45px;
+	display:none;
+}
+
+.infobar {
+	position: absolute;
+	left:420px;
+	top:140px;
+	width:683px;
+	height:454px;
+	font-family: "黑体";
+        font-size:32px;
+	color:#FFFFFF;
+        line-height:50px;
+}
+.item{
+	position:absolute;
+	width:677px;
+	height:50px;
+}
+.order{
+	position:absolute;
+	width:78px;
+	heght:50px;
+	left:6px;
+}
+.operid{
+	position:absolute;
+	left:160px;
+	width:167px;
+	heght:50px;
+}
+.opername{
+	position:absolute;
+	left:390px;
+	width:349px;
+	heght:50px;
+}
+.textcolor {
+	color:#9F6;
+}
+
+.textdiv {
+	float:left;
+}
+
+/*change pin*/
+#changePin{
+	position: absolute;
+	width:780px;
+	height:400px;
+	left:425px;
+	top:170px;
+	font-size:30px;
+	display:none;
+}
+.inputtitle {
+	float:left;
+	width:200px;
+	height:240px;
+	line-height:65px;
+}
+.inputline{
+	float:left;
+
+	width:400px;
+	height:240px;
+}
+
+.inputbg {
+	width:577px;
+	height:53px;
+	background-image:url('../../img/focusHover0.png');
+	background-repeat:no-repeat;
+	margin-top:12px;
+}
+.btn {
+	background-image:url('../../img/focusText0.png');
+	width:196px;
+	height:46px;
+	font-size: 32px;
+	text-align:center;
+	line-height:42px;
+}
+#confirm{
+	position: absolute;
+	left: 800px;
+	top: 450px;
+	display: none;
+}
+.inputlayer {
+	position: absolute;
+	width:577px;
+	z-index:100;
+	height:60px;
+}
+
+.inputtext {
+	float:left;
+	width:30px;
+	font-size:36px;
+	z-index:100;
+	height:60px;
+	line-height:65px;
+	text-align:center;
+	-webkit-transition-property:color;
+	-webkit-transition-duration:0.2s;
+}
+
+#inputfocus {
+	position:absolute;
+	z-index:90;
+	left:625px;
+	top:180px;
+	width:577px;
+	height:46px;
+	display:none;
+	background-image:url('../../img/focusHover2.png');
+	background-repeat:no-repeat;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+}
+
+#editfocus {
+	position:absolute;
+	z-index:95;
+	left:777px;
+	top:175px;
+	width:27px;
+	height:35px;
+	display: none;
+	margin-top: 12px;
+	background-image:url('../../img/textFos.png');
+	background-repeat:no-repeat;
+	-webkit-transition-property:left top;
+	-webkit-transition-duration:0.3s;
+}
+
+/*change pin*/
+/*rating */
+
+#changerating{
+	position: absolute;
+	left:625px;
+	top:180px;
+	
+	width:780px;
+	height:400px;
+	left:425px;
+	top:170px;
+	font-size:30px;
+
+	display: none;
+}
+#rating{
+	position: absolute;
+	width:577px;
+	height:53px;
+	left:200px;
+	line-height: 45px;
+	top:10px;
+	z-index:100;
+	text-align: center;
+	font-size:32px;	
+	}
+/*rating */
+/*work time*/
+#changeworktime{
+	position: absolute;
+	left:625px;
+	top:180px;
+	
+	width:780px;
+	height:400px;
+	left:425px;
+	top:170px;
+	font-size:30px;
+	display: none;
+}
+/*work time*/
+#enterpng {
+position:absolute;
+right:392px;
+top:652px;
+
+}
+#entertext {
+position:absolute;
+right:340px;
+top:662px;
+font-size:24px;
+}
+#quitpng {
+position:absolute;
+right:244px;
+top:652px;
+}
+#quit {
+position:absolute;
+right:190px;
+top:664px;
+font-size:24px;
+}

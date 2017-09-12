@@ -1,0 +1,249 @@
+@CHARSET "UTF-8";
+body{
+	background-color: transparent;
+}
+
+.item{
+	position: absolute;
+	left:5px;
+	line-height:36px;
+	height: 68px;
+	z-index:10 ;
+	width: 310px;
+}
+.searchproc {
+	width:764px;
+	height:20px;
+	top:20px;
+	margin-top:10px;
+	margin-left: 96px;
+}
+
+#screenRatio {
+	position:absolute;
+	left:1071px;
+	top:100px;
+	width:150px;
+	height:50px;
+	font-size:48px;
+}
+#procimg {
+	position:absolute;
+	height:8px;	
+	top:64px;
+	left:132px;
+	-webkit-transition-duration:0.3s;
+	border: none;
+	z-index:5px;
+
+	}
+#dot {
+	position:absolute;
+	width:21px;
+	height:25px;
+	left:133px;
+	top:78px;
+	-webkit-transition-property:left;
+	-webkit-transition-duration:0.3s;
+	background-image:url(../img/dot.png);
+	
+}
+#info{
+	position: absolute;
+	left:440px;
+	top:625px;
+	width:383px;
+	height:50px;
+	background-image:url(../img/prBarBg.png);
+
+}
+#playname {
+	position:absolute;
+	font-size:32px;
+	left:130px;
+	width:700px;
+	height:40px;
+	top:19px;
+	overflow:hidden;	
+	/*	padding-left:130px;
+	padding-top:8px;  */
+}
+#adytime {
+	position:absolute;   
+	font-size:22px;
+	width:100px;
+	top:10px;
+	right:160px;
+	line-height:55px;	
+	
+}
+#ttltime {
+	position:absolute;
+	font-size:22px;
+	width:100px;
+	top:10px;	
+	right:50px;
+	line-height:55px;	
+}
+#gang {
+	position:absolute;
+	font-size:22px;
+	width:100px;
+	top:10px;
+	right:67px;
+	line-height:55px;	
+	
+}
+#playbar{
+	position:absolute;
+	left:90px;
+	top:540px;
+	width:1109px;
+	height:129px;
+	background-image:url(../img/bg.png);
+	z-index:5;
+}
+#subtitle{
+	position:absolute;
+	left:318px;
+	top:600px;
+	width:700px;
+	height:50px;
+	font-size:48px;
+	white-space:pre-wrap;
+	text-align:center;
+	color:#3CF;
+	}
+#fast{
+	position:absolute;
+	left:1080px;
+	top:80px;
+	width:101px;
+	height:104px;
+	background-image:url(../img/anniu1.png)
+	
+}
+#text{
+		position:absolute;
+		right:20px;
+		top:15px;
+		font-size:32px;
+		color:#922701;
+		text-align:center;
+}
+#kuaijin{
+		position:absolute;
+		left:15px;
+		bottom:17px;
+		font-size:32px;
+		color:#922701;
+}
+#play{
+	position:absolute;
+	top: 20px;
+	left:30px;
+	width:88px;
+	height:90px;
+	background-image:url(../img/play.png)
+	
+}
+
+#left{
+	position:absolute;
+	top:3px;
+	left:70px;
+	width:50px;
+	height:50px;
+	background-color:#666;
+	background-image:   ;
+}
+#right{
+	position:absolute;
+	top:3px;
+	right:70px;
+	width:50px;
+	height:50px;
+	background-image:url(../img/right1.png)
+}
+#voice{
+	position:absolute;
+	top:3px;
+	right:0px;
+	width:50px;
+	height:50px;
+	background-color:#666;
+}
+
+#previous{
+	position:absolute;
+	top:20px;
+	left:50px;
+	width:84px;
+	height:93px;
+	background-image: url(../img/previous.png);
+}
+/*#pause{
+	position:absolute;
+	top:10px;
+	left:145px;
+	width:100px;
+	height:110px;
+	background-image: url(../img/pause.png);  
+}*/
+#next{
+	position:absolute;
+	top:20px;
+	left:260px;
+	width:84px;
+	height:93px;
+	background-image: url(../img/next.png);
+}
+
+#volbar {
+	position:absolute;
+	width:891px;
+	height:55px;
+	left:198px;
+	top:600px;
+	background-image:url('../img/jdtBg.png');
+	background-repeat:no-repeat;
+	padding-left:68px;
+	padding-top:15px;
+	z-index:10;
+}
+
+#volnum {
+	position:absolute;
+	width:90px;
+	height:40px;
+	left:789px;
+	top:7px;
+	font-size:36px;
+	color:#CCC;
+	line-height:40px;
+	text-align:center;
+}
+
+#curvol {
+	height:25px;
+	-webkit-transition-property:width;
+	-webkit-transition-duration:0.5s;
+}
+#mutepan {
+	position:absolute;
+	width:88px;
+	height:88px;
+	left:91px;
+	top:41px;
+}
+
+#volTrack
+{
+	position:absolute;
+	left:1046px;
+	top:46px;
+	width:196px;
+	height:50px;
+	font-size:48px;
+	color:#FFF;
+}

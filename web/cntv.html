@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CNTV</title>
+<style>
+body
+{
+	background-color:#000;
+	width:1280px;
+	height:720px;
+}
+#loadinfo
+{
+	position:absolute;
+	left: 340px;
+	top: 280px;
+	width: 600px;
+	height: 60px;
+	color: #CCC;
+	font-size: 28px;
+	text-align:center;
+}
+</style>
+<script language="javascript">
+function checkTimeout()
+{
+	if (HiBox.initCNTV())
+	{
+		AvConfig.setColorkey("#0");
+		HiBox.gotoCNTV();
+	}
+	else
+	{
+		setTimeout('checkTimeout()', 200);
+	}
+}
+
+function pageinit()
+{
+	AvConfig.setVolume(AvConfig.getVolume());
+	checkTimeout();
+}
+</script>
+</head>
+<body onload="pageinit()">
+
+<div id="loadinfo">正在加载CNTV模块，请稍候.......</div>
+
+</body>
+</html>

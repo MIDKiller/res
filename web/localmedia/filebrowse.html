@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>文件浏览页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/filebrowse.css">
+    <script type="text/javascript" src="../js/key.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="js/filebrowse.js"></script>
+</head>
+
+<body background="img/bg.jpg" onload="pageinit()" onUnload="pageuninit()">
+	<img src="../img/logo.png" style="position:absolute;top:40px;left:80px;">
+	<div id="title">本地播放&nbsp;>>&nbsp;文件浏览</div>
+	<div id="pathBar">
+          <div class="title">路径</div>
+                <div id="pathbox"></div>
+</div>
+	
+	<div id="leftlist" >
+		<div id="leftitem0" class="item" style="top:20px;">
+                        <div id="lefticon0" class="bigDisk" ></div>
+                        <div id="leftname0" class="leftfilename" ></div>
+		</div>
+		<div id="leftitem1" class="item" style="top:87px;">
+                        <div id="lefticon1" class="folder"  ></div>
+                        <div id="leftname1" class="leftfilename"  >文件名</div>
+		</div>
+		<div id="leftitem2" class="item" style="top:154px;">
+                        <div id="lefticon2" class="folder"></div>
+                        <div id="leftname2" class="leftfilename"  >filename</div>
+		</div>
+		
+		<div id="leftitem3" class="item" style="top:221px;">
+                        <div id="lefticon3" class="folder"></div>
+                        <div id="leftname3" class="leftfilename"  >filename</div>
+		</div>
+		<div id="leftitem4" class="item" style="top:288px;">
+                        <div id="lefticon4" class="folder"></div>
+                        <div id="leftname4" class="leftfilename"  >filename</div>
+		</div>
+		<div id="leftitem5" class="item" style="top:355px;">
+                        <div id="lefticon5" class="folder"></div>
+                        <div id="leftname5" class="leftfilename"  >filename</div>
+		</div>
+	</div>
+	
+	
+	<div id="rightlist">
+		<div id="rightitem0" class="item" style="top:20px;">
+                        <div id="righticon0" class="audio"></div>
+                        <div id="rightname0" class="rightfilename" style="width:670px;" ></div>
+		</div>	
+		<div id="rightitem1" class="item" style="top:87px;">
+                        <div id="righticon1" class="audio"></div>
+                        <div id="rightname1" class="rightfilename" style="width:670px;" ></div>
+		</div>	
+		<div id="rightitem2" class="item" style="top:154px;">
+                        <div id="righticon2" class="audio"></div>
+                        <div id="rightname2" class="rightfilename" style="width:670px;" ></div>
+		</div>	
+		<div id="rightitem3" class="item" style="top:221px;">
+                        <div id="righticon3" class="video"></div>
+                        <div id="rightname3" class="rightfilename" style="width:670px;" ></div>
+		</div>	
+		<div id="rightitem4" class="item" style="top:288px;">
+                        <div id="righticon4" class="video"></div>
+                        <div id="rightname4" class="rightfilename" style="width:670px;" ></div>
+		</div>	
+		<div id="rightitem5" class="item" style="top:355px;">
+                        <div id="righticon5" class="video"></div>
+                        <div id="rightname5" class="rightfilename" style="width:670px;" ></div>
+		</div>	
+	</div>
+<div id="leftfocus" style="top:203px;left:92px;"></div>
+	<div id="rightfocus"  style="top:203px;left:414px"></div>
+	<div id="empty">没有音视频文件</div>
+        <div id="note" class="note">
+	</div>
+    <div id="prom">仅显示该设备支持的媒体文件,支持格式有: mp3,mp4,mkv,flv,mov,ts,m2ts,mpg,m4v,f4v</div>
+        <div id="deletepng" ><img src="../img/ico2.png" /></div><div id="delete">退出</div>
+
+<div id="enterpng" ><img src="../img/ico1.png" /></div><div id="enter">进入</div>
+
+<div id="quitpng" > <img src="../img/ico3.png" /></div><div id="quit">上层目录</div>
+<div id="advdiv"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* CSS Document */
+
+body {
+	background-color:transparent;
+}
+
+#menu {
+	position: absolute;
+	left:-250px;
+	top:0px;
+	width: 250px;
+	height:720px;
+	font-size:32px;
+	-webkit-transition-property:left;
+	-webkit-transition-duration:0.8s;
+}
+
+#logo1{
+	position: absolute;
+	width: 200px;
+	height:74px;
+	left:50px;
+	top:40px;
+	z-index:100;
+}
+
+#logoimg{
+	width: 200px;
+	height: 74px;
+}
+
+#advdiv {
+	position: absolute;
+	width: 151px;
+	height:203px;
+	left:69px;
+	top:497px;
+	z-index:100;
+	overflow:hidden;
+}
+
+#menubg {
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 250px;
+	height:720px;
+	z-index:8;
+	background-color:#000040;
+	opacity:0.5;
+}
+
+#menulist {
+	position: absolute;
+	left:40px;
+	top:123px;
+	width: 200px;
+	height:240px;
+	z-index:100;
+}
+
+#menufocus {
+	position: absolute;
+	left:40px;
+	top:130px;
+	z-index:90;
+	width: 200px;
+	height:60px;
+	background-image:url(../../img/focusText1.png);
+	background-repeat:no-repeat;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+}
+
+.menuitem {
+	float:left;
+	width: 200px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+}

@@ -1,0 +1,130 @@
+/* CSS Document */
+body {
+	width:1280px;
+	height:720px;
+	margin:0px;
+	font-family: "黑体";
+	color:#FFF;
+
+    
+}
+
+#logo {
+	position:absolute;
+	width:298px;
+	height:108px;
+	left:94px;
+	top:57px;
+	background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+}
+.askbox {
+	position:absolute;
+	z-index:1000;
+	background-image:url(../img/big_note.png);
+	width:674px;
+	height:400px;
+	top:160px;
+	left:303px;
+}
+
+#askokbtn {
+	position:absolute;
+	background-image:url('../img/focusText1.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+	left: 85px;
+	top: 268px;
+	font-size:28px;
+}
+
+#asknobtn {
+	position:absolute;
+	background-image:url('../img/focusText0.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+	left: 393px;
+	top: 269px;
+	font-size:28px;
+}
+
+#asktitle {
+	position:absolute;
+	width:196px;
+	height:46px;
+	line-height:42px;
+	left: 42px;
+	top: 21px;
+	font-size:28px;
+}
+
+#askinfo {
+	position:absolute;
+	width:488px;
+	height:103px;
+	line-height:42px;
+	left: 90px;
+	top: 115px;
+	font-size:28px;
+}
+
+.note {
+	position:absolute;
+	width:674px;
+	height:210px;
+	line-height:200px;
+	left: 303px;
+	top: 240px;
+	font-size:36px;
+	text-align:center;
+	background-image:url(../dvb/img/small_note.png);
+	background-repeat:no-repeat;
+	z-index:10;
+}
+
+
+.msgbox {
+	position:absolute;
+	z-index:1000;
+	background-image:url(../img/big_note.png);
+	width:674px;
+	height:400px;
+	top:157px;
+	left:298px;
+}
+
+#msgokbtn {
+	position:absolute;
+	background-image:url('../img/focusText1.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+	left: 250px;
+	top: 268px;
+	font-size:28px;
+}
+
+#msgtitle {
+	position:absolute;
+	width:248px;
+	height:46px;
+	line-height:42px;
+	left: 46px;
+	top: 18px;
+	font-size:24px;
+}
+
+#msginfo {
+	position:absolute;
+	width:600px;
+	height:222px;
+	line-height:180px;
+	left: 73px;
+	top: 101px;
+	font-size:32px;
+}

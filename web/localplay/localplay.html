@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+<link rel="stylesheet" type="text/css" href="css/localplayer.css"/>
+<script type="text/javascript">
+	if (window.location.protocol != "ui:") {
+		url = "ui:/localplay/localplay.html?file=" + encodeURIComponent(window.location.href);
+		window.location.replace(url);
+	}
+</script>
+<script type="text/javascript" src="../js/utils.js"></script>
+<script type="text/javascript" src="../js/key.js"></script>
+<script type="text/javascript" src="js/localplayer.js"></script>
+<title>本地播放</title>
+
+</head>
+<body  onload="pageinit()" onunload="pagedeinit()">
+	<div id="playbar" >
+    	<div id="playname"></div>
+		<div id="play"></div>
+		<img id="procimg" src="img/bar.png" />
+		<div id="dot" style="display:none"></div>
+        <div id="adytime"></div>
+        <div id="gang">/</div>
+        <div id="ttltime"></div>
+	</div>
+    
+    <div id="volbar" style="display:none">
+    	<img id="curvol" src="img/jdt_center.png" border="0" />
+        <div id="volnum">0</div>
+</div>
+    
+	<div id="fast" style="display:none">
+		<div id="text">2</div>
+        <div id="kuaijin">快进</div>
+    </div>
+    
+<div id="mutepan" style="display:none">
+   		<img src="img/jy.png" border="0" />
+   		 </div>
+    <div id="askbox" class="askbox" style="display:none">
+   		<div id="asktitle">退出播放</div>
+    	<div id="askinfo"> &nbsp;确定退出当前播放</div>
+   		<div id="askokbtn">确&nbsp;&nbsp;定</div>
+    	<div id="asknobtn">取&nbsp;&nbsp;消</div>
+	</div>
+ 	<div id="subtitle"></div> 
+    
+    <div id="volTrack" style="display:none"></div>
+    <div id="screenRatio" style="display:none"></div>
+<div id="note" style="display:none" class="note"></div>
+</body>
+</html>

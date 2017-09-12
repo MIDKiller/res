@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>DVB播放页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/dvbplay.css" />
+    <script type="text/javascript" src="../js/key.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="js/dvbplay.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+</head>
+<body onLoad="pageinit()" onunload="pageuninit()">
+<div id="chanbar" style="display:none">
+    	<div id="chaninfo">
+        
+    		<div class="icon"><img src="img/ico24.png" border="0"  /></div>
+            <div id="channum">001</div>
+            <div id="channame">CCTV1</div>
+            <div ><img src="img/ico24.png" border="0"  /></div>
+            <div id="curtime"></div>
+        </div>
+        
+<div id="epg1" class="epg">
+        	 12:33 -- 13:00&nbsp;&nbsp;&nbsp;焦点访谈
+  </div>
+		<div id="epg2" class="epg">
+        	 13:33 -- 14:00&nbsp;&nbsp;&nbsp;经济半小时
+		</div>
+  <div id="advbar">
+        	<img id="avBarAd" src="../img/logo.png"  />
+        </div>
+			 <div id="audType"></div>
+</div>
+    
+    <div id="bigchannum" style="display:none">
+    	<div class="chanbignum"><img id="bignum2" src="img/num0.png" border="0"  /></div>
+        <div class="chanbignum"><img id="bignum1" src="img/num0.png" border="0"  /></div>
+        <div class="chanbignum"><img id="bignum0" src="img/num0.png" border="0"  /></div>
+        <div id="selchanname">
+        	CCTV-1
+        </div>
+    </div>
+    
+    <div id="volbar" style="display:none">
+    	<img id="curvol" src="img/jdt_center.png" border="0" />
+        <div id="volnum">0</div>
+        <div id="advvol"><img id="volad" src="../img/logo.png" border="0"/></div>
+    </div>
+    
+    <div id="mutepan" style="display:none">
+    	<img src="img/jy.png" border="0" />
+</div>
+    
+    <div id="canote" class="note" style="display:none;z-index:800;">
+    	消息提示
+    </div>
+    
+    <div id="tunernote" class="note"  style="display:none;z-index:801;">
+    	消息提示
+    </div>
+    
+    <div id="askbox" class="askbox" style="display:none">
+   		<div id="asktitle">清除频道</div>
+    	<div id="askinfo">确定删除所有频道？</div>
+   		<div id="askokbtn">确&nbsp;&nbsp;定</div>
+    	<div id="asknobtn">取&nbsp;&nbsp;消</div>
+   </div>
+ <!--osd begin -->
+ 
+ <div>
+   <div id="topinfobg" class="infobg" style="top:10px;"></div>
+	 <div id="topOSD"></div>
+ </div>
+ <div>
+	 <div id="bottominfobg" class="infobg" style="top:658px;">
+     <div id="DVNosd" style="left:150px;position:absolute;"></div>
+   	 </div>
+	  <div id="bottomOSD"></div>
+ </div>
+ <!--test
+ <img id="leftOSD" src="left.png" alt="no picture" style="position:absolute;left:30px;bottom:520px"/>
+  <img id="rightOSD" src="left.png" alt="no picture" style="position:absolute;left:1200px;bottom:620px"/>
+ test end-->
+ <div id="fullosd" 	style="display:none;">
+	 <div id="fullbg"></div>
+	 <div id="fullinfo"></div>
+ </div>
+ 
+ <div id="halfosd" >
+	 <div id="halfbg"></div>
+	 <div id="halfinfo"></div>
+ </div>
+<!--osd end-->
+   <div id="chinfo" style="display:none">
+    	<div id="title">频道信息</div>
+        <div id="infobar">
+          <div id="nametitle">当前节目名称：<span id="name" class="textcolor"></span></div>
+            <div id="avpidtitle">当前视频PID：<span id="avpid" class="textcolor"></span></div>
+            <div id="volpidtitle">当前音频PID：<span id="volpid" class="textcolor"></span></div>
+            <div id="FREQtitle">频率：<span id="FREQ" class="textcolor"></span></div>
+            <div id="QAMtitle">调制方式：<span id="QAM" class="textcolor"></span></div>
+            <div id="SYMtitle">符号率：<span id="SYM" class="textcolor"></span></div>
+            <div id="sigNoiseRatetitle">信噪比：<span id="sigNoiseRate" class="textcolor"></span></div>
+            <div id="signalPwltitle">信号电平：<span id="signalPwl" class="textcolor"></span></div>
+            <div id="bitErrorRatetitle">误码率：<span id="bitErrorRate" class="textcolor"></span></div>
+ 	 	</div>
+	</div>
+    <div id="newemail" style="display:none"></div>
+    <div id="openemail" style="display:none">
+    <div id="mailtitle">新邮件消息</div>
+    <div id= "mailcontent">测试八十个字啊啊测试八十个字啊啊测试八十个字啊啊测试八十个字啊啊测试八十个字啊啊测试八十个字啊啊测试八十个字啊啊测试八十个字啊啊啊啊测试八十个字啊啊 </div>
+    </div>
+    <div id="volTrack" style="display:none"></div>
+    <div id="screenRatio" style="display:none"></div>
+    
+    <div id="advflow"></div>
+   <div id="finger">45265452562</div>
+
+	<div id="main">
+		<div id="back" class="MainMenuBack"></div>
+		<div id="area" class="MainMenuArea"></div>
+	</div>
+	<div id="favnote" class="note" style="display: none; z-index: 1000">
+	</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+#titlebar {
+	position: absolute;
+	left:443px;
+	top:55px;
+	width:422px;
+	height:30px;
+	font-family: "黑体";
+	font-size:28px;
+	color:#FFFFFF;
+}
+#bar {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1100px;
+	height:50px;
+	font-family:"黑体";
+	font-size:32px;
+	color:#FFF;
+}
+#frame {
+	position:absolute;
+	left:77px;
+	top:120px;
+	width:1100px;
+	height:500px;
+	font-family:"黑体";
+	font-size:32px;
+	color:#FFF;
+	border-width:3px;
+	border-color:#FFF;
+}
+
+.title {
+	position:absolute;
+	left:650px;
+	top:6px;
+	padding-top: 8px;
+	width:700px;	
+	height:40px;
+/*	overflow:auto;   */
+}
+.col1{
+	position: absolute;
+	left: 50px;
+}
+.col2{
+		position: absolute;
+	left:340px;
+}
+.col3{
+		position: absolute;
+	left:620px;
+
+}
+.col4{
+		position: absolute;
+	left: 890px;
+
+}
+
+ul#list{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	white-space: nowrap;
+	z-index:5;
+	font-family:"黑体";
+	font-size:26px;
+	color:#FFF;
+	list-style-type:none;
+}
+ul#list li{
+	line-height: 42px;
+	height: 50px;
+}
+#deletepng {
+	position:absolute;
+	left:200px;
+	top:635px;
+	font-family:"黑体";
+	font-size:32px;
+	color:#FFF;
+	border-width:3px;
+	border-color:#FFF;
+}
+
+#quitpng {
+	position:absolute;
+	right:200px;
+	top:635px;
+	}
+#quit {
+	position:absolute;
+	right:150px;
+	top:645px;
+	font-size:24px;
+	}
+#bannerFocus {
+	position: absolute;
+	width:1100px;
+	height: 50px;
+	left:35px;
+	top:50px;
+	background-repeat: no-repeat; 
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../../img/listFocus4.png"); 
+}

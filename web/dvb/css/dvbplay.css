@@ -1,0 +1,491 @@
+/* CSS Document */
+body {
+	background-color:transparent;
+}
+
+#chanbar {
+	position:absolute;
+	width:891px;
+	height:164px;
+	left:194px;
+	top:540px;
+	background-image:url('../img/prBarBg.png');
+	background-repeat:no-repeat;
+}
+
+#chaninfo {
+	float:left;
+	padding-left:30px;
+	padding-top:0px;
+	margin-bottom:5px;
+	color:#CCC;
+}
+
+#chaninfo div {
+	float:left;
+}
+
+#channame {
+	font-size:32px;
+	width:500px;
+	padding-left:20px;
+	line-height:55px;
+}
+
+#channum {
+	font-size:32px;
+	width:60px;
+	padding-left:20px;
+	line-height:55px;
+	color:#09C;
+}
+
+#curtime {
+	font-size:32px;
+	width:100px;
+	padding-left:20px;
+	line-height:55px;
+}
+
+.icon {
+	width:44px;
+	height:55px;
+}
+
+.epg {
+	padding-left:45px;
+	line-height:42px;
+	height:42px;
+	font-size:24px;
+	width:580px;
+	color:gray;
+	overflow:hidden;
+}
+
+#advbar{
+	position:absolute;
+	width:230px;
+	height:85px;
+	left:637px;
+	top:55px;
+	overflow:hidden;
+}
+
+#bigchannum {
+	position:absolute;
+	width:190px;
+	height:100px;
+	left:1037px;
+	top:53px;
+}
+
+.chanbignum {
+	float:left;
+	width:62px;
+	height:64px;
+}
+
+#selchanname {
+	width:180px;
+	height:36px;
+	background-color:#036;
+	color:#CCC;
+	text-align:center;
+	line-height:36px;
+	font-size:32px;
+	float:left;
+}
+
+#volbar {
+	position:absolute;
+	/*	width:891px;   */
+	width:1050px;
+	height:55px;
+/*	left:198px;   因为广告系统改变*/
+	left:99px;
+	top:600px;
+	background-image:url('../img/jdtBg.png');
+	background-repeat:no-repeat;
+	padding-left:68px;
+	padding-top:15px;
+}
+
+#volnum {
+	position:absolute;
+	width:90px;
+	height:40px;
+	left:789px;
+	top:7px;
+	font-size:36px;
+	color:#CCC;
+	line-height:40px;
+	text-align:center;
+}
+
+#curvol {
+	height:25px;
+	-webkit-transition-property:width;
+	-webkit-transition-duration:0.5s;
+}
+#advvol {
+	position:absolute;
+	left:888px;
+	top:-30px;
+	height:120px;
+	width:252px;
+	overflow:hidden;
+}
+#avBarAd{
+	position:absolute;
+	width:230px;
+	height:85px;
+	left:0px;
+	top:0px;
+	
+}
+#mutepan {
+	position:absolute;
+	width:88px;
+	height:88px;
+	left:91px;
+	top:41px;
+}
+/*osd*/
+
+.infobg{
+	position:absolute;
+	width:1280px;
+	height:45px;
+	opacity:0.7;
+	z-index: -10;
+	background-color: blue;
+	display: none;
+	font-size:32px;
+}
+#topOSD
+{
+	font-size:32px;
+	line-height:32px;
+	color:white;
+	position:absolute;
+	top:20px;
+	left:1280px;
+	height:36px;
+	z-index: 10;
+	white-space: nowrap;
+}
+#bottomOSD
+{
+	font-size:32px;
+	line-height:32px;
+	position:absolute;
+	color:white;
+	top:665px;
+	left: 1280px;
+	height:36px;
+	z-index: 10;
+	white-space:nowrap;
+}
+#halfosd{
+	position: absolute;
+	top:210px;
+	left:390px;
+	width: 500px;
+	height:300px;
+	z-index: 1000;
+	text-align:left;
+	display: none;
+	
+}
+#halfinfo{
+	position: absolute;
+	top:20px;
+	left:50px;
+	font-size:32px;
+	z-index: 1000;
+}
+#halfbg{
+	height: 300px;
+	width: 500px;
+	opacity:0.6;
+	background-color:blue;
+}
+#fullosd {
+	height: 720px;
+	width: 1280px;
+	position: absolute;
+	z-index: 1000;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+#fullbg{
+	height: 720px;
+	width: 1280px;
+	opacity:0.6;
+	background-color:blue;
+}
+#fullinfo{
+	position: absolute;
+	top:20px;
+	left:50px;
+	font-size:32px;
+	z-index: 1000;
+}
+
+/*osd*/
+
+
+
+#chinfo {
+	position: absolute;
+	left:320px;
+	top:88px;
+	width:647px;
+	height:476px;
+	font-size:36px;
+	line-height:40px;
+	background-repeat:no-repeat; 
+	background-image:url('../img/open.png');
+	z-index:1500;
+}
+#title {
+	position:absolute;
+	left:243px;
+	top:13px;
+	height:30px;
+	font-size:32px;
+	color:#FFF;
+	
+}
+#infobar {
+	position:absolute;
+	left:71px;
+	top:87px;
+	font-size:32px;
+	width: 527px;
+	height: 297px;
+	
+}
+.textcolor {
+	color:#9F6;
+	font-size:32px;
+
+}
+.titleclass {
+	position:absolute;
+	left:50px;
+	top:100px;
+	}
+#newemail {
+	position:absolute;
+	top:80px;
+	right:100px;
+	width:55px;
+	height:40px;
+	z-index:-20;
+	background-repeat:no-repeat;
+	background-image: url("../img/newEmail.png");
+}
+
+#volTrack {
+	position:absolute;
+	left:1030px;
+	top:80px;
+	width:150px;
+	height:50px;
+	font-size:48px;		
+}
+#cornerad {
+	position: absolute;
+	right:100px;
+	top:500px;
+}
+
+
+
+#advprg
+{
+	position:absolute;
+	top:493px;
+	left:10px;
+	width:380px;
+	height:76px;
+	overflow:hidden;
+}
+
+#advflow
+{
+	position:absolute;
+	top:562px;
+	left:1090px;
+	width:140px;
+	height:140px;
+	overflow:hidden;
+}
+#screenRatio {
+	position:absolute;
+	left:1030px;
+	top:140px;
+	width:150px;
+	height:50px;
+	font-size:48px;		
+}
+#finger{
+	position:absolute;
+
+	display:none;
+	font-size:36px;	
+	color:green;	
+}
+#openemail
+{	position:absolute;
+	left:280px;
+	width:705px;
+	height:404px;
+	top:100px;
+
+	background-repeat:no-repeat;
+	z-index:1000;
+}
+#mailtitle
+{	position:absolute;
+	left:276px;
+	top:18px;
+	height:40px;
+	width:300px;
+	font-family:"黑体";
+	font-size:36px;
+	}
+#mailcontent {
+	position:absolute;
+	font-family:"黑体";
+	font-size:32px;
+	left:30px;
+	top:80px;
+	width:660px;
+	height:300px;
+
+}
+#audType {
+	position:absolute;
+	font-size:32px;
+	left:590px;
+	top: 4px;
+	width: 46px;
+	height: 42px;
+	background-repeat:no-repeat;
+
+}
+
+
+#main{
+position: absolute;
+bottom:0px;
+width:1280px;
+height:0px;
+overflow:Hidden;
+z-index:50;
+}
+.MainMenuBack{
+position: absolute;
+bottom:24px;
+left:0px;
+width:1280px;
+height:94px;
+font-size:45px;
+color:#0000ff;
+z-index: 6;
+background-repeat:no-repeat;
+background-image: url("../img/g01.jpg");
+}
+.MainMenuArea{
+position: absolute;
+bottom:24px;
+left:75px;
+width:1130px;
+height:574px;
+font-size:45px;
+color:#0000ff;
+z-index: 6;
+overflow:Hidden;
+/*background-color:#0f0f0f;*/
+}
+
+.MainMenuItem{
+position: absolute;
+bottom:0px;
+width:188px;
+height:91px;
+font-size:36px;
+line-height:86px;
+text-align:center;
+color:#fff;
+z-index: 11;
+}
+.MainMenuFocus{
+position: absolute;
+bottom:0px;
+width:188px;
+height:91px;
+font-size:45px;
+color:#00ff00;
+z-index: 10;
+\\background-color:#ff0000;
+background-repeat:no-repeat;
+background-image: url("../img/g02.jpg");
+-webkit-transition-property:left;
+-webkit-transition-duration:0.3s;
+}
+.SndMenu{
+position: absolute;
+width:188px;
+height:526px;
+bottom:91px;
+font-size:36px;
+color:#ff00ff;
+z-index: 6;
+overflow:Hidden;
+background-repeat:no-repeat;
+background-image: url("../img/g07.png");
+-webkit-transition-property:height;
+-webkit-transition-duration:0.5s;
+}
+.SndMenuItem{
+position: absolute;
+width:191px;
+height:48px;
+font-size:32px;
+line-height:46px;
+text-align:center;
+color:#fff;
+z-index: 8;
+overflow:Hidden;
+}
+.SndMenuFocus{
+position: absolute;
+width:191px;
+height:48px;
+font-size:45px;
+color:#ff00ff;
+z-index: 7;
+\\background-color:#ff00ff;
+background-repeat:no-repeat;
+background-image: url("../img/g06.png");
+-webkit-transition-property:top;
+-webkit-transition-duration:0.3s;
+}
+.note {
+	position:absolute;
+	width:674px;
+	height:210px;
+	line-height:200px;
+	left: 303px;
+	top: 240px;
+	font-size:36px;
+	text-align:center;
+	background-image:url(../../dvb/img/small_note.png);
+	background-repeat:no-repeat;
+	z-index:10;
+	color:#FFF;
+}

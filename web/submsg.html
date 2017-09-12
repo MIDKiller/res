@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/key.js"></script>
+<title>预约提示</title>
+</head>
+<style>
+body
+{
+	background-color:transparent;
+	margin:0px;
+	color:#FFF;
+	font-size:24px;
+	background-image:url(img/big_note.png);
+	background-repeat:no-repeat;
+}
+.askbox {
+	position:absolute;
+	z-index:1000;
+	width:674px;
+	height:400px;
+	top:0px;
+	left:0px;
+}
+#askokbtn {
+	position:absolute;
+	background-image:url('img/focusText1.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+	left: 85px;
+	top: 268px;
+	font-size:28px;
+}
+
+#asknobtn {
+	position:absolute;
+	background-image:url('img/focusText0.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+	left: 393px;
+	top: 269px;
+	font-size:28px;
+}
+
+#asktitle {
+	position:absolute;
+	width:196px;
+	height:46px;
+	line-height:42px;
+	left: 42px;
+	top: 21px;
+	font-size:28px;
+}
+
+#askinfo {
+	position:absolute;
+	width:488px;
+	height:103px;
+	line-height:42px;
+	left: 90px;
+	top: 90px;
+	font-size:28px;
+}
+</style>
+<script language="javascript">
+var chanIndex = 1;
+var prgName = '';
+var backSecond = 20;
+var selOk = true;
+function showBtn()
+{
+	var obj;
+	if (selOk)
+	{
+		obj = document.getElementById('askokbtn');
+		obj.style.backgroundImage = "url('img/focusText1.png')";
+		obj = document.getElementById('asknobtn');
+		obj.style.backgroundImage = "url('img/focusText0.png')";
+	}
+	else
+	{
+		obj = document.getElementById('askokbtn');
+		obj.style.backgroundImage = "url('img/focusText0.png')";
+		obj = document.getElementById('asknobtn');
+		obj.style.backgroundImage = "url('img/focusText1.png')";
+	}
+}
+
+function handleKey()
+{
+	var keyCode = event.keyCode;
+	switch (keyCode)
+	{
+	case LEFT:
+	case RIGHT:
+		selOk = !selOk;
+		showBtn();
+		break;
+	case ENTER:
+		if (!selOk)
+		{
+			HiBox.setOverlayFrame({visible:"false",location:""});
+		}
+		else
+		{
+			HiBox.setOverlayFrame({visible:"false",location:""});
+			HiBox.setMainFrame({location:"play"});
+		}
+		break;
+	default:
+		break;
+	}
+}
+
+function onBackSecond()
+{
+	backSecond--;
+	if (backSecond == 0)
+	{
+		HiBox.setOverlayFrame({visible:"false",location:""});
+		HiBox.setMainFrame({location:"dvbplay"});
+		return;
+	}
+	
+	document.getElementById('backsec').innerHTML = backSecond;
+}
+
+function showTitle()
+{
+	window.onkeydown = handleKey;
+	var obj = document.getElementById('askinfo');
+	obj.innerHTML = '《'+ prgName + '》播出时间到，<span id="backsec" style="width:40px">20</span>秒后跳转，选择确定按钮直接跳转至节目，选择取消按钮取消跳转';
+	document.getElementById('askbox').style.display = '';
+}
+
+function pageinit()
+{
+	var params = new Parameter();
+	chanIndex = params.getParamInt('chanIndex');
+	prgName = System.getWebEnv("grpName");
+		
+	setInterval('onBackSecond()', 1000);
+	setTimeout("showTitle()", 150);
+}
+</script>
+<body onload="pageinit()">
+    <div id="askbox" class="askbox" style="display:none">
+	  <div id="asktitle">节目预约</div>
+    	<div id="askinfo"></div>
+    <div id="askokbtn">确&nbsp;&nbsp;定</div>
+    	<div id="asknobtn">取&nbsp;&nbsp;消</div>
+   </div>
+</div>
+</body>
+</html>

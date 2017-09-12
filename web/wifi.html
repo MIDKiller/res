@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<link rel="stylesheet" type="text/css" href="css/wifi.css">
+<script type="text/javascript" src="js/key.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/wifi.js"></script>
+<title>无线网络配置</title>
+</head>
+<body background="img/userSetBg.jpg" onload="pageinit()" onunload="pageuninit()">
+	<div id="wifibg"></div>
+	<div id="logo" style="top:25px"></div>
+<div id="title">系统设置&nbsp;>>&nbsp;无线设置</div>
+	<div id="funbar">
+    	<div class="selbox">
+        	<img src="img/seleIcoFos.png" id="selboxfocus" />
+            <img src="img/seleNoneIco.png" id="selbox" />
+            <div id="enabletext">无线开关</div>
+        </div>
+        <div id="serachbtn" class="btn" style="display:none;">搜&nbsp;&nbsp;索</div>
+        <div id="setbtn" class="btn" style="display:none;">设置地址</div>
+    </div>
+<div id="apfocus" style="display:none;"></div>
+    <div id="aplist">
+   	  <div class="c2" style="line-height:50px">&nbsp;</div>
+      <div class="apname" id="ap0">&nbsp;</div>
+      <div class="apname" id="ap1">&nbsp;</div>
+      <div class="apname" id="ap2">&nbsp;</div>
+      <div class="apname" id="ap3">&nbsp;</div>
+      <div class="apname" id="ap4">&nbsp;</div>
+      <div class="apname" id="ap5">&nbsp;</div>
+      <div class="apname" id="ap6">&nbsp;</div>
+</div>
+    <div id="status">
+<div class="c2" style="line-height:50px" >&nbsp;</div>
+        <div>&nbsp;&nbsp;开启状态：<span class="c1" id="iwenable">关闭</span></div>
+        <div>&nbsp;&nbsp;连接状态：<span class="c1" id="iwstatus">正在连接...</span></div>
+        <div>&nbsp;&nbsp;无线名称：<span class="c1" id="iwessid"></span></div>
+        <div>&nbsp;&nbsp;地址方式：<span class="c1" id="iwdhcp">自动获取</span></div>
+        <div>&nbsp;&nbsp;IP&nbsp;&nbsp;地&nbsp;&nbsp;址：<span class="c1" id="iwip">192.168.1.2</span></div>
+        <div>&nbsp;&nbsp;子网掩码：<span class="c1" id="iwnetmask">255.255.0.0</span></div>
+        <div>&nbsp;&nbsp;网关地址：<span class="c1" id="iwgw">192.168.1.1</span></div>
+        <div>&nbsp;&nbsp;DNS&nbsp;地址：<span class="c1" id="iwdns">8.8.8.8</span></div>
+  </div>
+  
+  <div id="keyinput" style="display:none">
+  	<div id="inputtitle">请输入密码：</div>
+    <div id="inputedit"></div>
+    <div id="inputokbtn">确 定</div>
+    <div id="charsel" style="display:none">
+    	<div id="charfocus"></div>
+        <div id="chars">
+    		<div id="c0"></div>
+        	<div id="c1"></div>
+        	<div id="c2"></div>        
+        	<div id="c3"></div>
+        	<div id="c4"></div>
+        	<div id="c5"></div>        
+        	<div id="c6"></div>
+        	<div id="c7"></div> 
+        	<div id="c8"></div>
+        </div>
+    </div>
+  </div>
+  
+  <div id="msgbox" class="msgbox" style="display:none">
+	<div id="msgtitle"></div>
+	<div id="msginfo"></div>
+	<div id="askbox" class="askbox" style="display:none">
+   		<div id="askokbtn">确&nbsp;&nbsp;定</div>
+    	<div id="asknobtn">取&nbsp;&nbsp;消</div>
+   </div>
+</div>
+</body>
+</html>

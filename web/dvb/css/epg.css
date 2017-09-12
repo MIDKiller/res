@@ -1,0 +1,208 @@
+/* CSS Document */
+body {
+	background-color: transparent;
+	overflow: hidden;
+	
+}
+#chanlist {
+	position: absolute;
+	top: 180px;
+	left: 524px;
+	width: 651px;
+	height: 180px;
+	font-size: 32px;
+	z-index: 100;
+}
+
+.chanline {
+	width: 651px;
+	height: 45px;
+	line-height: 45px;
+	float: left;
+	overflow: hidden;
+}
+
+#chanfocus {
+	position: absolute;
+	top: 178px;
+	left: 510px;
+	width: 680px;
+	height: 50px;
+	z-index: 90;
+	background-image: url(../../img/ch_focus0.png);
+	background-repeat: no-repeat;
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.3s;
+}
+
+#daypannel {
+	position: absolute;
+	top: 381px;
+	left: 100px;
+	width: 1076px;
+	height: 39px;
+	font-size: 24px;
+	z-index: 100;
+}
+
+.daybtn {
+	width: 139px;
+	height: 39px;
+	line-height: 39px;
+	text-align: center;
+	float: left;
+	margin-left: 12px;
+}
+
+#dayfocus {
+	position: absolute;
+	top: 381px;
+	left: 112px;
+	background-image: url(../../img/menuFocus30.png);
+	background-repeat: no-repeat;
+	z-index: 90;
+	width: 139px;
+	height: 39px;
+	-webkit-transition-property: left;
+	-webkit-transition-duration: 0.3s;
+}
+
+#epglist {
+	position: absolute;
+	top: 425px;
+	left: 125px;
+	width: 1040px;
+	height: 190px;
+	font-size: 26px;
+	z-index: 90;
+}
+
+.epgline {
+	width: 990px;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+	float: left;
+}
+
+.subicon {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-image: url(../img/clock.png);
+	margin-top: 4px;
+	float: left;
+}
+
+#waitinfo {
+	position: absolute;
+	top: 425px;
+	left: 125px;
+	width: 500px;
+	height: 40px;
+	font-size: 28px;
+	line-height: 40px;
+	z-index: 100;
+}
+
+/*#datetimebar {
+	position: absolute;
+	top: 40px;
+	left: 988px;
+	width: 218px;
+	height: 40px;
+	font-size: 24px;
+	line-height: 40px;
+}*/
+#datetimebar {
+	position: absolute;
+	top: 60px;
+	left: 930px;
+	width:400px;
+	height: 40px;
+	font-size: 24px;
+	line-height: 40px;
+}
+#advdiv {
+	position: absolute;
+	width: 672px;
+	height: 80px;
+	left: 514px;
+	top: 32px;
+	overflow: hidden;
+}
+
+#epgfocus {
+	position: absolute;
+	width: 1060px;
+	height: 36px;
+	left: 107px;
+	top: 426px;
+	background-color: #666;
+	z-index: 80;
+	border: double #9CF 1px;
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.3s;
+}
+
+
+#helptextpng {
+	position: fixed;
+	left: 595px;
+	top: 634px;
+}
+
+#helptext {
+	position: fixed;
+	width: 1060px;
+	height: 36px;
+	left: 600px;
+	top: 634px;
+	font-size: 26px;
+	line-height: 36px;
+	color: #4B0082;
+}
+
+#helptext1png {
+	position: fixed;
+	left: 815px;
+	top: 634px;
+}
+
+#helptext1 {
+	position: fixed;
+	width: 1060px;
+	height: 36px;
+	left: 840px;
+	top: 634px;
+	font-size: 26px;
+	line-height: 36px;
+	color: #4B0082;
+}
+
+#helptext2png {
+	position: fixed;
+	left: 1020px;
+	top: 634px;
+}
+
+#helptext2 {
+	position: fixed;
+	width: 1060px;
+	height: 36px;
+	left: 1050px;
+	top: 634px;  
+	font-size: 26px;
+	line-height: 36px;
+	color: #4B0082;
+}
+#helptext3 {
+	position: fixed;
+	width: 1060px;
+	height: 36px;
+	left: 1000px;
+	top: 634px;  
+	font-size: 26px;
+	line-height: 36px;
+	color: #4B0082;
+}

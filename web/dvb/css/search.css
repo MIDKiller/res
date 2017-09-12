@@ -1,0 +1,279 @@
+/* CSS Document */
+body {
+	background-color:#000000;
+}
+
+#banner{
+	position: absolute;
+	width: 311px;
+	height:460px;
+	top:138px;
+	left:80px;
+	background-image: url("../../img/listBg1.png");
+}
+.banner{
+	position:absolute;
+	color:gray;
+	z-index:5;
+	font-family: "黑体";
+	font-size: 36px;
+	left: 80px;
+}
+
+#bannerFocus{
+	position: absolute;
+	width:308px;
+	height: 68px;
+	left:1px;
+	top:30px;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../../img/listFocus2.png"); 
+}
+
+#titlebar {
+	position: absolute;
+	left:483px;
+	top:55px;
+	width:378px;
+	height:30px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+
+#autoscan {
+	position: absolute;
+	left:504px;
+	top:217px;
+	width:731px;
+	height:213px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+
+#clschan {
+	position: absolute;
+	left:504px;
+	top:217px;
+	width:731px;
+	height:213px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+
+.btn {
+	background-image:url('../../img/focusText0.png');
+	width:196px;
+	height:46px;
+	text-align:center;
+	line-height:42px;
+}
+
+#autoscanbtn {
+	position: absolute;
+	left: 187px;
+	top: 110px;
+}
+
+#clschanbtn {
+	position: absolute;
+	left: 187px;
+	top: 110px;
+}
+
+#scandiv {
+	position: absolute;
+	left: 425px;
+	top: 142px;
+	width: 764px;
+	height:500px;
+}
+
+#scanrst {
+	width: 764px;
+	height:262px;
+	background-image:url('../img/textBg1.png');
+	background-repeat:no-repeat;
+	font-size:30px;
+	line-height:35px;
+	padding:15px 15px 15px 15px;
+}
+
+#scanstat {
+	width:764px;
+	height:300px;
+	font-family: "黑体";
+	font-size:28px;
+	color:#FFFFFF;
+	padding-top:20px;
+}
+
+.channum {
+	width:200px;
+	height:40px;
+	line-height:40px;
+	float:left;
+}
+
+.searchproc {
+	width:764px;
+	height:40px;
+	margin-top:20px;
+	float:left;
+}
+
+.proctext {
+	width:90px;
+	height:40px;
+	float:left;
+	line-height:40px;
+}
+
+.procbg {
+	width:656px;
+	height:24px;
+	background-image:url('../img/ssjdtBg.png');
+	background-repeat:no-repeat;
+	float:left;
+	margin-top:10px;
+	padding-top:1px;
+	padding-left:3px;
+}
+
+.signalnum {
+	width:300px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	margin-top:20px;
+}
+
+#manualscan {
+	position: absolute;
+	width:780px;
+	height:400px;
+	left:425px;
+	top:147px;
+	font-size:32px;
+}
+
+.inputtitle {
+	float:left;
+	width:180px;
+	height:240px;
+	line-height:65px;
+}
+
+.inputline{
+	float:left;
+	width:400px;
+	height:240px;
+}
+
+.inputbg {
+	width:577px;
+	height:53px;
+	background-image:url('../../img/focusHover0.png');
+	background-repeat:no-repeat;
+	margin-top:12px;
+}
+
+#manualscanbtn {
+	position: absolute;
+	left: 312px;
+	top: 297px;
+}
+
+.inputlayer {
+	position: absolute;
+	z-index:100;
+	width:150px;
+	height:60px;
+}
+
+.inputtext {
+	float:left;
+	width:30px;
+	font-size:36px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+}
+
+#inputfocus {
+	position:absolute;
+	z-index:90;
+	left:180px;
+	top:12px;
+	width:577px;
+	height:46px;
+	background-image:url('../../img/focusHover2.png');
+	background-repeat:no-repeat;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+}
+
+#editfocus {
+	position:absolute;
+	z-index:95;
+	left:391px;
+	top:17px;
+	width:27px;
+	height:35px;
+	background-image:url('../../img/textFos.png');
+	background-repeat:no-repeat;
+	-webkit-transition-property:left top;
+	-webkit-transition-duration:0.3s;
+}
+
+#qaminput {
+	text-align:center;
+}
+
+#freqset {
+	position: absolute;
+	width:780px;
+	height:400px;
+	left:425px;
+	top:147px;
+	font-size:32px;
+}
+
+#freqsetbtn {
+	position: absolute;
+	left: 312px;
+	top: 297px;
+}
+
+#freqinputfocus {
+	position:absolute;
+	z-index:90;
+	left:180px;
+	top:12px;
+	width:577px;
+	height:46px;
+	background-image:url('../../img/focusHover2.png');
+	background-repeat:no-repeat;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+}
+
+#freqeditfocus {
+	position:absolute;
+	z-index:95;
+	left:391px;
+	top:17px;
+	width:27px;
+	height:35px;
+	background-image:url('../../img/textFos.png');
+	background-repeat:no-repeat;
+	-webkit-transition-property:left top;
+	-webkit-transition-duration:0.3s;
+}
+
+#freqqaminput {
+	text-align:center;
+}

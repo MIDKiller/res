@@ -1,0 +1,300 @@
+
+#title{
+	position:absolute;
+	text-align:center;
+	font-size:42px;
+	width:1280px;
+	top:50px;
+}
+#dhcp{
+	position: absolute;
+	top:13px;
+	width:577px;
+	height:46px;
+	
+}
+#dhcpImgNaN{
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	background-image: url("../../img/seleNoneIco.png");
+}
+#dhcpImgFoc{
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	background-image: url("../../img/seleIcoFos.png");
+}
+#dhcpImgSel{
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	background-image: url("../../img/seleIco.png");
+}
+
+#yoN{
+	position: absolute;
+	left: 55px;
+	font-family: "榛戜綋";
+}
+#item1{
+	position:absolute;
+	top:75px;
+	width:577px;
+	height:46px;
+	background-image: url("../../img/focusHover0.png");
+	
+}
+#item2{
+	position:absolute;
+	top:137px;
+	width:577px;
+	height:46px;
+	background-image: url("../../img/focusHover0.png");
+	
+}
+#item3{
+	position:absolute;
+	top:199px;
+	width:577px;
+	height:46px;
+	background-image: url("../../img/focusHover0.png");
+	
+}
+#item4{
+	position:absolute;
+	top:261px;
+	width:577px;
+	height:46px;
+	background-image: url("../../img/focusHover0.png");
+	
+}
+
+#item{
+	position: absolute;
+	width: 900px;
+	height:400px;
+	top:130px;
+	left:210px;
+	font-size: 40px;
+}
+#itemleft{
+	position: absolute;
+	left: 0px;
+}
+#itemright{
+	position: absolute;
+	left: 260px;
+	width:577px;
+	height:400px;
+	font-family: "榛戜綋";
+	text-align: center;
+}
+.items{
+	margin-top: 16px;
+	font-family: "榛戜綋";
+}
+.input1{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:100px;
+
+}
+.input2{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:125px;
+
+}
+.input3{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:150px;
+	
+}
+.dot1{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:179px;
+	
+	text-align: center;
+}
+.input5{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:200px;
+	
+	
+}
+.input6{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:225px;
+	
+	
+}
+.input7{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:250px;
+	
+	
+}
+.dot2{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:279px;
+	
+}
+.input9{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:300px;
+	
+	
+}
+.input10{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:325px;
+	
+	
+}
+.input11{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:350px;
+
+	
+}
+.dot3{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:379px;
+	
+
+}
+.input13{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:400px;
+	
+	
+}
+.input14{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:425px;
+	
+	
+}
+.input15{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	top:1px;
+	left:450px;
+	
+	
+}
+#focusY{
+	position: absolute;
+	width: 577px;
+	height: 46px;
+	top:75px;
+	background-image: url("../../img/focusHover2.png");
+	z-index: -1;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+}
+#focusX{
+	position: absolute;
+	top:6px;
+	width: 27px;
+	height: 35px;
+	left:96px;
+	background-image: url("../../img/textFos.png");
+	-webkit-transition-property:left;
+	-webkit-transition-duration:0.3s;
+}
+.submit{
+	position: absolute;
+	padding-top:3px;
+	width: 198px;
+	height: 46px;
+	top:400px;
+	left:200px;
+	text-align:center;
+	font-size:32px;
+	background-repeat:no-repeat;
+	background-image: url("../img/focusText0.png");
+}
+.reset{
+	position: absolute;
+	padding-top:3px;
+	width: 198px;
+	height: 46px;
+	top:400px;
+	left:600px;
+	text-align:center;
+	font-size:32px;
+	background-repeat:no-repeat;
+	background-image: url("../img/focusText0.png");
+}
+
+#note{
+	position:absolute;
+	font-size:32px;
+	top:300px;
+	left:260px;
+	display:none;
+	
+}
+#pingOK {
+	position:absolute;
+	top:300px;
+	font-size:50px;
+	left:48%;
+	color:#0F0;
+	display:none;
+	border-style:solid;
+	border-width:3pt;
+}	
+#pingFalse {
+	position:absolute;
+	top:300px;
+	font-size:50px;
+	left:48%;
+	color:#F00;
+	display:none;
+	border-style:solid;
+	border-width:3pt;
+}

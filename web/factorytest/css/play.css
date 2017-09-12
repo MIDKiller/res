@@ -1,0 +1,37 @@
+body{
+background-color: transparent;
+font-family: "黑体";
+font-size: 42px;
+color: white;
+}
+#main{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	float: left;	
+	z-index: 5;
+}
+
+#main div{
+	margin-top: 20px;	
+	z-index: 5;
+	}
+	#bg{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 400px;
+	height: 400px;
+	background-color: blue;
+	opacity: 0.8;	
+	z-index: 0;
+	}
+#footer{
+position: absolute;
+background-color: blue;
+font-size: 32px;
+white-space: nowrap;
+top: 600px;
+left: 100px;
+
+}

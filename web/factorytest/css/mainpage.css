@@ -1,0 +1,8 @@
+/* CSS Document */
+
+body{  color:#FFFFFF; font-size:30px;font-family:"黑体"; font-weight:bold; width:1280px;height:720px; background-color:#000000;}
+
+#mainbg{ width:100%;height:100%;background-color:#000000;z-index:-1;/*opacity:0.2;*/}
+ul{ position:absolute;left:450px;top:10px; }
+ul li{ width:200px;list-style:none;margin:5px;padding:10px;}
+ul li.focus{ background-color:#FFFFFF;color:#000000;}

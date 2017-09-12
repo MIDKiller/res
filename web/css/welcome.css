@@ -1,0 +1,26 @@
+/* CSS Document */
+#ad{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1280px;
+	height:720px;
+	z-index:5;
+}
+
+#update{
+	position:absolute;
+	left:415px;
+	width:1000px;
+	top:600px;
+	color:#FFF;
+	font-size:36px;
+	z-index:10;
+
+}
+#adload{
+    position:absolute;
+    top:3px;
+    left:400px;
+
+}

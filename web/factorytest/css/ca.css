@@ -1,0 +1,44 @@
+#title
+{
+	position:relative;
+	top:100px;
+	font-size:50px;
+	color:#FFF;
+}
+#tip
+{
+	position:relative;
+	top:200px;
+	color:#FFF;
+	font-size:45px;
+	display:none;
+}
+#content
+{
+	position:relative;
+	top:450px;
+	font-size:30px;
+	color:#FFF;
+}
+#true 
+{
+	position:absolute;
+	top:300px;
+	left:45%;
+	font-size:45px;
+	color:#0F0;
+	display:none;
+	border-style:solid;
+	border-width:3pt;
+}	
+#false 
+{
+	position:absolute;
+	top:300px;
+	left:45%;
+	font-size:45px;
+	color:#F00;
+	display:none;
+	border-style:solid;
+	border-width:3pt;
+}

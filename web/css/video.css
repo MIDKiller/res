@@ -1,0 +1,213 @@
+#banner {
+	position: absolute;
+	width: 311px;
+	height: 460px;
+	top: 138px;
+	left: 80px;
+	background-image: url("../img/listBg1.png");
+}
+
+.banner {
+	position: absolute;
+	color: gray;
+	z-index: 5;
+	font-family: "黑体";
+	font-size: 40px;
+	left: 80px;
+}
+
+#bannerFocus {
+	position: absolute;
+	width: 308px;
+	height: 68px;
+	left: 1px;
+	top: 30px;
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.3s;
+	background-image: url("../img/listFocus2.png");
+}
+
+.list {
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	top: 130px;
+	left: 430px;
+}
+
+#videoItemText1 {
+	position: absolute;
+	width: 200px;
+	height: 400px;
+}
+
+#videoItemText2 {
+	position: absolute;
+	width: 200px;
+	height: 400px;
+}
+
+.videoItemText {
+	text-align: right;
+	font-size: 38px;
+	height: 44px;
+	color: white;
+	font-family: "黑体";
+	margin-top: 15px;
+	padding-bottom:4px;
+}
+
+#videoAudioItem1 {
+	position: absolute;
+	height: 400px;
+	width: 577px;
+	left: 210;
+}
+
+#videoAudioItem2 {
+	position: absolute;
+	height: 400px;
+	width: 577px;
+	left: 210;
+	height: 400px;
+}
+
+.videoItem {
+	position: absolute;
+	width: 577px;
+	height: 46px;
+	font-size: 38px;
+	color: white;
+	font-family: "黑体";
+	text-align: center;
+	line-height:43px;
+	background-image: url("../img/focusHover0.png");
+}
+
+#itemFocus {
+	z-index: -1;
+	position: absolute;
+	width: 577px;
+	height: 46px;
+	background-image: url("../img/focusHover2.png");
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.3s;
+}
+
+#auitemFocus {
+	z-index: -1;
+	position: absolute;
+	width: 577px;
+	height: 46px;
+	background-image: url("../img/focusHover2.png");
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.3s;
+}
+
+.submit {
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-family: "黑体";
+	font-size: 36px;
+	width: 198px;
+	height: 46px;
+	top: 430px;
+	left: 150px;
+	background-image: url("../img/focusText0.png");
+}
+
+.reset {
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-family: "黑体";
+	font-size: 36px;
+	width: 198px;
+	height: 46px;
+	top: 430px;
+	left: 450px;
+	background-image: url("../img/focusText0.png");
+}
+
+.item1 {
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	top: 3px;
+	left: 260px;
+	color: white;
+	font-size: 38px;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.5s;
+}
+
+.item2 {
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	top: 3px;
+	left: 290px;
+	color: white;
+	font-size: 38px;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.5s;
+}
+
+#inputFocus {
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	left: 260px;
+	top: 5px;
+	background-image: url("../img/textFos.png");
+	-webkit-transition-property: left;
+	-webkit-transition-duration: 0.3s;
+}
+
+#auinputFocus {
+	position: absolute;
+	width: 27px;
+	height: 35px;
+	left: 260px;
+	top: 5px;
+	background-image: url("../img/textFos.png");
+	-webkit-transition-property: left;
+	-webkit-transition-duration: 0.3s;
+}
+
+#note {
+	position: absolute;
+	z-index: 1000;
+	background-image: url(../img/big_note.png);
+	width: 674px;
+	height: 400px;
+	top: 160px;
+	left: 303px;
+	z-index: 10;
+}
+
+#noteText {
+	font-size: 32px;
+	color: white;
+	position: absolute;
+	left: 140px;
+	top: 104px;
+	height: 65px;
+	width: 400px;
+	text-align: center;
+}
+
+#ok {
+	color: white;
+	position: absolute;
+	width: 196px;
+	height: 46px;
+	text-align: center;
+	line-height: 42px;
+	left: 241px;
+	top: 255px;
+	font-size: 28px;
+	background-image: url("../img/focusText1.png");
+	background-repeat: no-repeat;
+}

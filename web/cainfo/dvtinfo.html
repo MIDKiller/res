@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+  <head>
+
+    <title>系统信息</title>
+
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+
+    <meta http-equiv="description" content="this is my page">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    
+
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+
+    <link rel="stylesheet" type="text/css" href="css/dvtinfo.css">
+
+    <script type="text/javascript" src="../js/key.js"></script>
+
+    <script type="text/javascript" src="../js/utils.js"></script>
+
+    <script type="text/javascript" src="js/dvtinfo.js"></script>
+
+  </head>
+
+  
+
+  <body background="../img/userSetBg.jpg" onLoad="pageinit()">
+
+  	<div id="logo" style="top:16px"></div>
+
+<div id="banner">
+
+   		<div id="list0" class="banner" style="top:40px;color: white;">机顶盒信息</div>
+		<div id="list1" class="banner" style="top:108px;color:white;">CA基本信息</div>
+		<div id="list2" class="banner" style="top:176px;color:white">CA授权信息</div>
+                <div id="list3" class="banner" style="top:243px;color:white">修改PIN码</div>
+                <div id="list4" class="banner" style="top:311px;color:white;">修改观看级别</div>
+                <div id="list5" class="banner" style="top:379px;color:white">修改工作时段</div>
+   		<div id="bannerFocus" style="top:30px;"></div>
+
+</div>
+
+<div id="titlebar">系统设置 > 系统信息</div>
+
+   <div id="infobar" class="infobar" style="top:138px;left:444px;display:none;">
+	
+	   <div>生产厂商：<span class="textcolor">西安海数多媒体技术有限公司</span></div>
+	
+            <div>序&nbsp;&nbsp;列&nbsp;&nbsp;号：<span id="stbid" class="textcolor"></span></div>
+            <div>业&nbsp;&nbsp;务&nbsp;&nbsp;号：<span id="bossnum" class="textcolor"></span></div>
+	
+	    <div>设备型号：<span class="textcolor">DB808HC</span></div>
+	
+	    <div>芯片型号：<span class="textcolor">Hi3716Mv310</span></div>
+	
+            <div>内&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;存：<span class="textcolor">512M</span></div>
+	
+	    <div>硬件版本：<span id="hwver" class="textcolor"></span></div>
+	
+	    <div>软件版本：<span id="softver" class="textcolor"></span></div>
+	
+	    <div>发布日期：<span id="pubdate" class="textcolor"></span></div>
+
+   </div>
+   
+   <div id="cainfobar" class="infobar" style="top:138px;left:444px;display:none;">
+                <div>智能卡内部卡号：<span id="cardID" class="textcolor">1231212</span></div>
+                <div>智能卡COS版本：<span id="COSVer" class="textcolor">456456456</span></div>
+                <div>机顶盒 CA 版本：<span id="STBVer" class="textcolor">5</span></div>
+                <div>CAS 厂 商 代 号：<span id="CASName" class="textcolor">00:00-00:00</span></div>
+                <div>区域码：<span id="areaCode" class="textcolor">00:00-00:00</span></div>
+                <div>区 域 锁 状 态：<span id="startFlag" class="textcolor">00:00-00:00</span></div>
+                <div>区 域 码流 时 间：<span id="streamTime" class="textcolor">00:00-00:00</span></div>
+                <div>子母 卡属  性：<span id="isMother" class="textcolor">00:00-00:00</span></div>
+                <div>母卡卡号：<span id="motherID" class="textcolor">00:00-00:00</span></div>
+                <div>PIN码状态：<span id="pinLocked" class="textcolor">00:00-00:00</span></div>
+                <div>收看级别：<span id="watchRating" class="textcolor">00:00-00:00</span></div>
+                <div>工作时段：<span id="workTime" class="textcolor">00:00-00:00</span></div>
+   </div>
+
+<div id="authinfo" class="infobar" style="display:none">
+
+  <div style="position:absolute; left:2px; top: 2px;">序号</div>
+  <div style="position:absolute; left:134px; top: 2px;">运营商ID</div>
+  <div style = "position:absolute; left:356px; top: 3px; width: 208px;">运营商名称</div>
+   
+    <div id="item0" class="item" style="top:55px">
+<div id="order0" class="order" ></div>
+         <div id="operid0" class="operid"></div>
+         <div id="opername0" class="opername"></div>
+    </div>
+    <div id="item1" class="item" style="top:105px">
+        <div id="order1" class="order" ></div>
+        <div id="operid1" class="operid"></div>
+        <div id="opername1" class="opername"></div>
+    </div>
+    <div id="item2" class="item" style="top:155px">
+   	<div id="order2" class="order" ></div>
+        <div id="operid2" class="operid"></div>
+        <div id="opername2" class="opername"></div>
+     </div>  
+     <div id="item3" class="item" style="top:205px">
+   	<div id="order3" class="order" ></div>
+        <div id="operid3" class="operid"></div>
+        <div id="opername3" class="opername"></div>
+       </div>
+     
+      <div id="listfocus" style="top:50px;"></div>
+  </div>
+
+<div id="changePin" >
+             <div class="inputtitle">
+                <div id="title0">原&nbsp;&nbsp;&nbsp;&nbsp;PIN&nbsp;&nbsp;&nbsp;码：</div>
+                <div id="title1">新&nbsp;&nbsp;&nbsp;&nbsp;PIN&nbsp;&nbsp;&nbsp;码：</div>
+                <div id="title2">确认新PIN码：</div>
+             </div>
+        <div class="inputline" >
+                <div id="inputbg0" class="inputbg" ></div>
+                <div id="inputbg1" class="inputbg"></div>
+                <div id="inputbg2" class="inputbg"></div>
+        </div>
+
+
+        <div id="input0"class="inputlayer" style="left:350px; top:5px;">
+           <div id="num00" class="inputtext">*</div>
+           <div id="num01" class="inputtext">*</div>
+           <div id="num02" class="inputtext">*</div>
+           <div id="num03" class="inputtext">*</div>
+           <div id="num04" class="inputtext">*</div>
+           <div id="num05" class="inputtext">*</div>
+           <div id="num06" class="inputtext">*</div>
+           <div id="num07" class="inputtext">*</div>
+        </div>
+        <div id="input1" class="inputlayer" style="left:350px; top:70px;">
+           <div id="num10" class="inputtext">*</div>
+           <div id="num11" class="inputtext">*</div>
+           <div id="num12" class="inputtext">*</div>
+           <div id="num13" class="inputtext">*</div>
+           <div id="num14" class="inputtext">*</div>
+           <div id="num15" class="inputtext">*</div>
+           <div id="num16" class="inputtext">*</div>
+           <div id="num17" class="inputtext">*</div>
+        </div>
+         <div id="input2" class="inputlayer" style="left:350px; top:135px;">
+           <div id="num20" class="inputtext">*</div>
+           <div id="num21" class="inputtext">*</div>
+           <div id="num22" class="inputtext">*</div>
+           <div id="num23" class="inputtext">*</div>
+           <div id="num24" class="inputtext">*</div>
+           <div id="num25" class="inputtext">*</div>
+           <div id="num26" class="inputtext">*</div>
+           <div id="num27" class="inputtext">*</div>
+        </div>
+   </div>
+
+    <div id="inputfocus" ></div>
+    <div id="editfocus"  ></div>
+    <div id="confirm" class="btn">确定</div>
+
+ <div id="empty" >无授权信息！</div>
+    <div id="quitpng" ><img src="../img/ico2.png" /></div><div id="quit">退出</div>
+<div id="enter" style="display:none;">
+<div id="enterpng" ><img src="../img/ico1.png" />
+</div><div id="entertext">进入</div>
+</div>
+<div id="askbox" class="askbox" style="display:none">
+   	<div id="asktitle">清除频道</div>
+    <div id="askinfo">确定删除所有频道？</div>
+   	<div id="askokbtn">确&nbsp;&nbsp;定</div>
+    <div id="asknobtn">取&nbsp;&nbsp;消</div>
+   </div>
+
+<div id="msgbox" class="msgbox" style="display:none">
+        <div id="msgtitle">清除频道</div>
+        <div id="msginfo">确定删除所有频道？</div>
+        <div id="msgokbtn">确&nbsp;&nbsp;定</div>
+</div>
+<div id="canote" class="note" style="display:none;z-index:800;">
+       请插入智能卡
+   </div>
+   <div id="waitnote" class="note" style="display:none;z-index:800;">
+          正在获取，请稍候...
+      </div>
+</html>

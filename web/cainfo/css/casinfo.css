@@ -1,0 +1,125 @@
+/* CSS Document */
+body {
+	background-color:#000000;
+}
+
+#banner{
+	position: absolute;
+	width: 311px;
+	height:460px;
+	top:138px;
+	left:80px;
+	background-image: url("../../img/listBg1.png");
+}
+.banner{
+	position:absolute;
+	color:gray;
+	z-index:5;
+	font-family: "黑体";
+	font-size: 36px;
+	line-height: 46px;
+	left: 70px;
+}
+#bannerFocus{
+	position: absolute;
+	width:308px;
+	height: 68px;
+	left:1px;
+	top:30px;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../../img/listFocus2.png"); 
+}
+#listfocus{
+	position: absolute;
+	width:677px;
+	height: 50px;
+	top:50px;
+	z-index:-5;
+	display:none;
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../../img/listFocus5.png");
+}
+#titlebar {
+	position: absolute;
+	left:443px;
+	top:50px;
+	width:422px;
+	height:30px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+}
+#empty{
+	position: absolute;
+	left:580px;
+	top:300px;
+	font-size:45px;
+	display:none;
+}
+
+.infobar {
+	position: absolute;
+	left:420px;
+	top:140px;
+	width:683px;
+	height:454px;
+	font-family: "黑体";
+	font-size:32px;
+	color:#FFFFFF;
+	line-height:50px;
+}
+.item{
+	position:absolute;
+	width:677px;
+	height:50px;
+}
+.order{
+	position:absolute;
+	width:78px;
+	heght:50px;
+	left:6px;
+}
+.operid{
+	position:absolute;
+	left:131px;
+	width:167px;
+	heght:50px;
+}
+.opername{
+	position:absolute;
+	left:355px;
+	width:349px;
+	heght:50px;
+}
+.textcolor {
+	color:#9F6;
+}
+
+.textdiv {
+	float:left;
+}
+#enterpng {
+position:absolute;
+right:392px;
+top:652px;
+
+}
+#entertext {
+position:absolute;
+right:340px;
+top:662px;
+font-size:24px;
+}
+#quitpng {
+position:absolute;
+right:244px;
+top:652px;
+}
+#quit {
+position:absolute;
+right:190px;
+top:664px;
+font-size:24px;
+}

@@ -1,0 +1,211 @@
+#titlebar {
+	position: absolute;
+	left:443px;
+	top:55px;
+	width:422px;
+	height:30px;
+	font-family: "黑体";
+	font-size:28px;
+	color:#FFFFFF;
+}
+#bar {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1100px;
+	height:50px;
+	font-family:"黑体";
+	font-size:32px;
+	color:#FFF;
+}
+#frame {
+	position:absolute;
+	left:77px;
+	top:120px;
+	width:1100px;
+	height:500px;
+	font-family:"黑体";
+	font-size:32px;
+	color:#FFF;
+	border-width:3px;
+	border-color:#FFF;
+}
+.num {
+	position:absolute;
+	left:15px;
+	top:8px;
+	list-style:upper-roman;	
+}
+.statetitle {
+	position:absolute;
+	left:108px;
+	top:8px;
+}
+.state {
+	position:absolute;
+	left:110px;
+	top:8px;
+	width:70px;
+/*	background-image:url(../img/CAnewEmail.png);   */
+	background-repeat: no-repeat;       
+	 background-position: center;
+	}
+.title {
+	position:absolute;
+	left:200px;
+	top:8px;
+	width:700px;	
+	height:40px;
+/*	overflow:auto;   */
+}
+.datetitle {
+	position:absolute;
+	right:150px;
+	top:8px;
+	
+}
+.date {
+	position:absolute;
+	right:15px;
+	top:8px;	
+}
+.timetitle {
+	position:absolute;
+	right:25px;	
+	top:10px;
+}
+.time {
+	position:absolute;
+	right:5px;
+	top:6px;
+	}
+.location {
+	position:relative;
+	left:0px;
+	top:50px;
+	height:50px;
+	width:1100px;
+	z-index:5;
+	font-family:"黑体";
+	font-size:32px;
+	color:#FFF;
+}
+#deletepng {
+	position:absolute;
+	right:350px;
+	top:635px;
+}
+#delete {
+	position:absolute;
+	right:297px;
+	top:645px;
+	font-size:24px;	
+}
+#enterpng {
+	position:absolute;
+	right:250px;
+	top:635px;
+	
+}
+#enter {
+	position:absolute;
+	right:197px;
+	top:645px;	
+	font-size:24px;
+}
+#quitpng {
+	position:absolute;
+	right:150px;
+	top:635px;
+	}
+#quit {
+	position:absolute;
+	right:100px;
+	top:645px;
+	font-size:24px;
+	}
+#bannerFocus {
+	position: absolute;
+	width:1100px;
+	height: 50px;
+	left:0px;
+	top:50px;
+	background-repeat: no-repeat; 
+	-webkit-transition-property:top;
+	-webkit-transition-duration:0.3s;
+	background-image: url("../img/focus.png"); 
+}
+#condentwindow {
+	position:absolute;
+	left:140px;
+	top:106px;
+	width:1000px;
+	height:545px;
+	font-family:"黑体";
+	font-size:32px;
+	z-index:10;
+	background-image:url(../img/open4.png); 
+}
+#content {
+	position:absolute;
+	left:184px;
+	top:178px;
+	width:673px;
+	height:288px;
+
+}
+#sendtime{
+	position:absolute;
+	top:128px;
+	left:95px;
+	width:150px;
+	height:49px;
+	}
+#sendtime1{
+	position:absolute;
+	top:127px;
+	left:247px;
+	width:369px;
+	height:49px;
+	}
+	
+#titlebox1 {
+	position:absolute;
+	top:76px;
+	left:180px;
+	width:550px;
+	height:50px;
+	}	
+#titlebox {
+	position:absolute;
+	top:75px;
+	left:95px;
+	width:83px;
+	height:50px;
+	}	
+#zhengwen {
+	position:absolute;
+	top:178px;
+	left:95px;
+	width:87px;
+	height:50px
+	}
+#returnpng {
+	position:absolute;
+	top:482px;
+	left:701px;
+	background-image:url(../img/return.png);
+	width: 40px;
+	height: 45px;
+}	
+#return1 {
+	position:absolute;
+	top:482px;
+	left:750px;
+}	
+	
+#emailzhengwen {
+	position:absolute;
+	top:9px;
+	left:432px;
+	}
